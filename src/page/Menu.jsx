@@ -36,7 +36,7 @@ const Menu = () => {
             {productDisplay.category}
           </p>
           <p className=" font-bold md:text-2xl">
-            <span className="text-red-500 ">₹</span>
+            <span className="text-red-500 ">₱</span>
             <span>{productDisplay.price}</span>
           </p>
           <div className="flex gap-3">

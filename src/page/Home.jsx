@@ -5,6 +5,7 @@ import HomeCard from "../component/HomeCard";
 import { GrPrevious, GrNext } from "react-icons/gr";
 import FilterProduct from "../component/FilterProduct";
 import AllProduct from "../component/AllProduct";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -26,11 +27,6 @@ const Home = () => {
   };
 
 
- 
-
-
-  
-
 
 
   return (
@@ -45,8 +41,8 @@ const Home = () => {
             />
           </div>
           <h2 className="text-4xl md:text-7xl font-bold py-3">
-            The Fasted Delivery in{" "}
-            <span className="text-red-600 text-">Your Home</span>
+            So Fast<br></br>{" "}
+            <span className="text-green-600 text-">So Good</span>
           </h2>
           <p className="py-3 text-base ">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -55,9 +51,11 @@ const Home = () => {
             and scrambled it to make a type specimen book. It has survived not
             only five centuries
           </p>
-          <button className="font-bold bg-red-500 text-slate-200 px-4 py-2 rounded-md">
+          <Link to={"menu/64a2c1dc1cbc8ea6ff7eb726"}>
+          <button className="font-bold bg-green-500 text-slate-200 px-4 py-2 rounded-md">
             Order Now
           </button>
+          </Link>
         </div>
 
         <div className="md:w-1/2 flex flex-wrap gap-5 p-4 justify-center">

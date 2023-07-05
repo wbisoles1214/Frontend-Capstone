@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import loginSignupImage from "../assets/login-animation.gif";
 import { BiShow, BiHide } from "react-icons/bi";
 import { Link, useNavigate } from "react-router-dom";
-import { BsEmojiSmileUpsideDown } from "react-icons/bs";
+// import { BsEmojiSmileUpsideDown } from "react-icons/bs";
 import { ImagetoBase64 } from "../utility/ImagetoBase";
 import { toast } from "react-hot-toast";
 
@@ -46,14 +46,14 @@ function Signup() {
       };
     });
   };
-  console.log(process.env.REACT_APP_SERVER_DOMIN);
+  console.log("http://localhost:8080/");
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { firstName, email, password, confirmPassword } = data;
     if (firstName && email && password && confirmPassword) {
       if (password === confirmPassword) {
         const fetchData = await fetch(
-          `${process.env.REACT_APP_SERVER_DOMIN}/signup`,
+          `http://localhost:8080/signup`,
           {
             method: "POST",
             headers: {
